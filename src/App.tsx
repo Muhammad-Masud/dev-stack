@@ -1,4 +1,5 @@
-
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Navbar from './components/Navbar.tsx'
 import Hero from './components/Hero.tsx'
 import TechnologiesSection from './components/TechnologiesSection.tsx'
@@ -9,8 +10,18 @@ const App = () => (
     <Navbar />
     <main>
       <Hero />
+      <TechnologiesSection />
     </main>
     <Footer />
+    <ToastContainer
+      position="bottom-right"
+      autoClose={2200}
+      hideProgressBar
+      newestOnTop
+      closeOnClick
+      pauseOnHover
+      theme="light"
+    />
   </div>
 )
 
