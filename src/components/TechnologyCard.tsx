@@ -1,3 +1,3 @@
 
 
-export default TechnologyCard
+export default TechnologyCard;

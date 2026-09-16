@@ -1,3 +1,3 @@
 
 
-export default TechnologiesSection
+export default TechnologiesSection;
