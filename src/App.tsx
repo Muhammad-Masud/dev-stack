@@ -1,7 +1,8 @@
-import Navbar from "./components/Navbar.tsx";
-import Hero from "./components/Hero.tsx";
-import TechnologiesSection from "./components/TechnologiesSection.tsx";
-import Footer from "./components/Footer.tsx";
+
+import Navbar from './components/Navbar.tsx'
+import Hero from './components/Hero.tsx'
+import TechnologiesSection from './components/TechnologiesSection.tsx'
+import Footer from './components/Footer.tsx'
 
 const App = () => (
   <div className="min-h-screen bg-white">
@@ -9,7 +10,8 @@ const App = () => (
     <main>
       <Hero />
     </main>
+    <Footer />
   </div>
-);
+)
 
-export default App;
+export default App
