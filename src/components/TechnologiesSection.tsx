@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import type { Technology } from "../types.ts";
 import TechnologyCard from "./TechnologyCard.tsx";
+import StackSidebar from "./StackSidebar.tsx";
 
 const TechnologiesSection = () => {
   const [technologies, setTechnologies] = useState<Technology[]>([]);
@@ -36,6 +37,17 @@ const TechnologiesSection = () => {
 
     setStack((current) => [...current, technology]);
     toast.success(`${technology.name} added to your stack.`);
+  };
+
+  const removeFromStack = (technology: Technology) => {
+    setStack((current) => current.filter((item) => item.id !== technology.id));
+    toast.info(`${technology.name} removed from your stack.`);
+  };
+
+  const removeAll = () => {
+    if (stack.length === 0) return;
+    setStack([]);
+    toast.info("All technologies removed from your stack.");
   };
 
   return (
