@@ -85,6 +85,11 @@ const TechnologiesSection = () => {
                 />
               ))}
             </div>
+            <StackSidebar
+              stack={stack}
+              onRemove={removeFromStack}
+              onRemoveAll={removeAll}
+            />
           </div>
         )}
       </div>
